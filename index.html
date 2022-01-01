@@ -11,7 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/academicons.min.css" />  <!-- Academicons for Google Scholar -->
+	<link rel="stylesheet" href="assets/css/academicons.min.css" /> <!-- Academicons for Google Scholar -->
 </head>
 
 <body class="is-preload">
@@ -24,6 +24,7 @@
 			<div class="inner">
 
 				<!-- Header -->
+				<a id="Introduction">
 				<header id="header">
 					<!-- <a href="index.html" class="logo"><strong>Tyler Lum</strong></a> -->
 					<ul class="icons">
@@ -33,13 +34,16 @@
 									class="label">Medium</span></a></li>
 						<li><a href="https://medium.com/@tylergwlum" class="icon brands fa-medium-m fa-lg"><span
 									class="label">Medium</span></a></li>
-						<li><a href="mailto:tylergwlum@gmail.com" class="icon fa-envelope fa-lg"><span
+						<!--
+							<li><a href="mailto:tylergwlum@gmail.com" class="icon fa-envelope fa-lg"><span
 									class="label">Medium</span></a></li>
+						-->
 						<li><a href="https://scholar.google.com/citations?user=kPq6-XIAAAAJ&hl=en&inst=17001591832933267808"
 								style="color: #7f888f; font-size: 1.8em; text-decoration: none; border-bottom: none;"
 								class="ai ai-google-scholar"><span class="label"></span></a></li>
 					</ul>
 				</header>
+				</a>
 
 				<!-- Banner -->
 				<section id="banner">
@@ -71,6 +75,7 @@
 				</section>
 
 				<!-- Research Interests -->
+				<a id="research-interests">
 				<section>
 					<header class="major">
 						<h2>Research Interests</h2>
@@ -143,106 +148,173 @@
 						-->
 					</div>
 				</section>
+				</a>
 
 				<!-- Projects -->
-				<section>
-					<header class="major">
-						<h2>Projects</h2>
-					</header>
-					<div class="posts">
-						<article>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-							<h3>Data-driven Mixed Martial Arts Automated Scoring</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-							<h3>Virtual RobotX (VRX): Simulator for Autonomous Surface Vessels</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-							<h3>UBC Sailbot: Fully Autonomous Sailboat</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-							<h3>Vim Configuration for Fast Text Editing</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-							<h3>PDE Solvers: FDM, FEM, BEM, FFT</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3>Contactless Vitals Monitoring System</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3>Autonomous Robot</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3>Volta Flex: EMG Garment for Muscle Rehabilitation</h3>
-							<p>https://voltaflex.io/</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3>Autonomous Electric Car Charger</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-							<h3>Gym Gazebo</h3>
-							<p>TODO</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-					</div>
-				</section>
+				<a id="projects">
+					<section>
+						<header class="major">
+							<h2>Projects</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<a href="https://github.com/tylerlum/ufc_automated_scoring_system" class="image"><img src="images/UFC.jpeg" alt="" /></a>
+								<h3>Data-driven Mixed Martial Arts (MMA) Automated Scoring</h3>
+								<p>When an MMA fight ends without a finish, judges render a decision based on a scoring system that can be quite subjective and prone to error.
+									To address this issue, I built a dataset consisting of thousands of UFC fights,
+									and used it to train an ML-based automated scoring system for MMA fights to produce unbiased fight decisions.  </p>
+								<ul class="actions">
+									<li><a href="https://github.com/tylerlum/ufc_automated_scoring_system" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://gist.github.com/tylerlum/51c6c246419a1ecc107e0b7a28514b9f" class="image"><img src="images/VRX.png" alt="" /></a>
+								<h3>Virtual RobotX (VRX): Simulator for Autonomous Surface Vessels</h3>
+								<p><a href="https://github.com/osrf/vrx">VRX</a> is an autonomous boat simulator that uses ROS and Gazebo for physics, rendering, and communication.
+									I developed software to add features for customization and control,
+									enhance the simulator's overall realism,
+									and improve the infrastructure for competitions that use VRX.</p>
+								<ul class="actions">
+									<li><a href="https://gist.github.com/tylerlum/51c6c246419a1ecc107e0b7a28514b9f" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://github.com/UBCSailbot/local-pathfinding" class="image"><img src="images/Sailbot.jpg" alt="" /></a>
+								<h3>UBC Sailbot: Fully Autonomous Sailboat</h3>
+								<p>I led the development of pathfinding and perception algorithms for a fully autonomous sailboat named Raye.
+									Raye will be the first fully autonomous sailboat to sail from Victoria to Maui (over 4000km) in 2022.  </p>
+								<ul class="actions">
+									<li><a href="https://github.com/UBCSailbot/local-pathfinding" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://github.com/tylerlum/vim_configuration" class="image"><img src="images/Vim.png" alt="" /></a>
+								<h3>Vim Configuration for Fast Text Editing</h3>
+								<p><a href="https://www.vim.org/">Vim</a> is an highly efficient and configurable text editor that I love.
+									I shared the Vim configuration file I use for fast text editing, and I wrote articles about Vim that have over 60,000 views.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/tylerlum/vim_configuration" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://www.youtube.com/watch?v=qKnw_AMKno4&ab_channel=BenHolmes" class="image"><img src="images/Kinect.png" alt="" /></a>
+								<h3>Contactless Vitals Monitoring System</h3>
+								<p>Research from Press Ganey Associates found that the average ER wait time in 2009 was 6 hours, which is plenty of time for a patient's condition to worsen significantly before they are seen.
+									To address this issue, we used a Kinect sensor to monitor the breathing of multiple people simultaneously, and send an alert if the breathing rates are outside of normal ranges.
+								</p>
+								<ul class="actions">
+									<li><a href="https://devpost.com/software/long-range-vitals" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://order66bot.github.io/" class="image"><img src="images/Order66.jpg" alt="" /></a>
+								<h3>Autonomous Robot</h3>
+								<p>We designed and built a fully autonomous, multi-robot system from scratch in 13 weeks.
+									We developed mechanical, electrical, and software systems that allowed to robot to navigate through a complex obstacle course.</p>
+								<ul class="actions">
+									<li><a href="https://order66bot.github.io/" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="https://voltaflex.io/" class="image"><img src="images/Volta.jpg" alt="" /></a>
+								<h3>Volta Flex: Electromyography (EMG) Garment for Injury Recovery</h3>
+								<p>The VOLTA Flex V1 is a garment with integrated EMG sensors that supports injury recovery.
+									It allows users to visualize their muscle activation during strengthening exercises to support faster recover.</p>
+								<ul class="actions">
+									<li><a href="https://voltaflex.io/" class="button">More</a></li>
+								</ul>
+							</article>
+							<!--
+							<article>
+								<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+								<h3>Autonomous Electric Car Charger</h3>
+								<p>TODO</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+								<h3>Gym Gazebo</h3>
+								<p>TODO</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+								<h3>PDE Solvers: FDM, FEM, BEM, FFT</h3>
+								<p>TODO</p>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</article>
+							-->
+						</div>
+					</section>
+				</a>
 
 			</div>
 		</div>
-	</div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#research-interests">Research Interests</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li>
+							<span class="opener">Submenu</span>
+							<ul>
+								<li><a href="#">Lorem Dolor</a></li>
+								<li><a href="#">Ipsum Adipiscing</a></li>
+								<li><a href="#">Tempus Magna</a></li>
+								<li><a href="#">Feugiat Veroeros</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get In Touch</h2>
+					</header>
+					<p>If you're interested in my work, feel free to contact me. I would love to connect!</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="#">tylergwlum at gmail dot com</a></li>
+						<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
+						<li class="icon solid fa-home">Vancouver, BC, Canada</li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<!--
+				<footer id="footer">
+					<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a
+							href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5
+							UP</a>.</p>
+				</footer>
+				-->
+
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 </body>
 
