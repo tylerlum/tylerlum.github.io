@@ -6,9 +6,6 @@ Credits:
         HTML Template:
 	        HTML5 Up (html5up.net)
 
-	Demo Images:
-		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
 
