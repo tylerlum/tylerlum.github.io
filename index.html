@@ -6,16 +6,39 @@
 -->
 <html>
   <head>
-    <title>Tyler Lum</title>
+    <title>Tyler Lum | Robot Learning and Dexterous Manipulation</title>
+    <meta name="description" content="Tyler Lum is a Computer Science PhD student at Stanford University working on general-purpose dexterity for real-world robots, using simulation, reinforcement learning, and human videos." />
+
+    <!-- Open Graph / link previews when the site is shared -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tylerlum.github.io/" />
+    <meta
+      property="og:title"
+      content="Tyler Lum | Robot Learning and Dexterous Manipulation"
+    />
+    <meta property="og:description" content="Tyler Lum is a Computer Science PhD student at Stanford University working on general-purpose dexterity for real-world robots, using simulation, reinforcement learning, and human videos." />
+    <meta
+      property="og:image"
+      content="https://tylerlum.github.io/images/Tyler.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tylerlum23" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      content="width=device-width, initial-scale=1"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- Academicons for Google Scholar -->
     <link rel="stylesheet" href="assets/css/academicons.min.css" />
+
+    <style>
+      .talk-date {
+        text-align: right;
+        white-space: nowrap;
+      }
+    </style>
 
     <!-- Favicon: Icon in browser tab -->
     <link rel="icon" href="images/stanford_favicon.png" type="image/x-icon" />
@@ -105,25 +128,31 @@
                 and Professor
                 <a href="https://web.stanford.edu/~bohg/">Jeannette Bohg</a> in
                 the
-                <a href="http://iprl.stanford.edu/"
+                <a href="https://iprl.stanford.edu/"
                   >Interactive Perception and Robot Learning (IPRL) Lab</a
                 >, and I am supported by an NSERC Postgraduate Scholarship
                 (PGS-D).
               </p>
               <p>
-                I am broadly interested in building robots that can move and act
-                in dynamic real-world environments in an elegant and efficient
-                manner. My research focuses on developing the most effective
-                ways to integrate learning-based perception and control, and
-                studying the inductive biases we can exploit to improve the
-                efficiency and reliability of these systems. I hope to uncover
-                the underlying principles that enable intelligent agents to
-                reason through uncertainty, continuously learn from their
-                environments, and adapt to new challenges. My long-term goal is
-                to create robots that have some form of
-                <i>common sense reasoning</i>, which will make them reliable
-                enough to create tremendous value for people in their everyday
-                lives.
+                My goal is to build <b>general-purpose dexterity for
+                real-world robots</b>: reusable low-level physical
+                skills that generalize across new objects and tasks.
+                Most dexterous manipulation today is either highly
+                dexterous but narrow (often a single object and a single
+                task) or broad but limited to slow pick-and-place. My
+                research asks how far simulation, reinforcement
+                learning, and human videos can take us toward both high
+                dexterity and broad generality. Simulation is the only
+                source of detailed contact-rich interaction data that
+                scales with compute rather than human effort, but it has
+                no semantics and no sense of which tasks matter or how a
+                person would approach them. Human videos are the
+                opposite: abundant and rich in semantics and strategy,
+                but missing the actions, forces, and contact that
+                dexterity actually runs on. I am very excited about
+                research that brings these two data sources together,
+                toward robots that can do any physical task that humans
+                can do.
               </p>
               <p>
                 Before my PhD, I studied
@@ -145,7 +174,7 @@
               </p>
             </div>
             <span class="image object">
-              <img src="images/Tyler.jpg" alt="" />
+              <img src="images/Tyler.jpg" alt="Tyler Lum" />
             </span>
           </section>
 
@@ -155,11 +184,56 @@
             <header class="major">
               <h2>Research Interests</h2>
             </header>
+            <!-- Row 1: what I work on. Row 2: how. -->
             <div class="features">
               <article>
                 <span class="icon solid fa-robot"></span>
                 <div class="content">
-                  <h3>Intelligent Robots</h3>
+                  <h3>Robot Learning</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-hand-paper"></span>
+                <div class="content">
+                  <h3>Dexterous Manipulation</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-tools"></span>
+                <div class="content">
+                  <h3>Tool Use</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-chart-line"></span>
+                <div class="content">
+                  <h3>Reinforcement Learning</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-cubes"></span>
+                <div class="content">
+                  <h3>Simulation</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-walking"></span>
+                <div class="content">
+                  <h3>Human Videos</h3>
+                </div>
+              </article>
+              <!--
+              Previously listed. Kept in case they are wanted back.
+              <article>
+                <span class="icon solid fa-exchange-alt"></span>
+                <div class="content">
+                  <h3>Sim-to-Real</h3>
+                </div>
+              </article>
+              <article>
+                <span class="icon solid fa-compass"></span>
+                <div class="content">
+                  <h3>Exploration</h3>
                 </div>
               </article>
               <article>
@@ -172,12 +246,6 @@
                 <span class="icon solid fa-eye"></span>
                 <div class="content">
                   <h3>Interactive Perception</h3>
-                </div>
-              </article>
-              <article>
-                <span class="icon solid fa-hands"></span>
-                <div class="content">
-                  <h3>Dexterous Bimanual Manipulation</h3>
                 </div>
               </article>
               <article>
@@ -204,13 +272,6 @@
                   <h3>Common Sense Reasoning</h3>
                 </div>
               </article>
-              <article>
-                <span class="icon solid fa-search"></span>
-                <div class="content">
-                  <h3>Exploration Strategies</h3>
-                </div>
-              </article>
-              <!--
               <article>
                 <span class="icon solid fa-people-carry"></span>
                 <div class="content">
@@ -243,7 +304,7 @@
             <div class="posts">
               <article>
                 <a href="https://play2perfect.github.io/" class="image"
-                  ><img src="images/Play2Perfect.png" alt=""
+                  ><img loading="lazy" src="images/Play2Perfect.png" alt="Play2Perfect"
                 /></a>
                 <h3>Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?</h3>
                 <p>
@@ -264,7 +325,7 @@
               </article>
               <article>
                 <a href="https://simtoolreal.github.io/" class="image"
-                  ><img src="images/simtoolreal.png" alt=""
+                  ><img loading="lazy" src="images/simtoolreal.png" alt="SimToolReal"
                 /></a>
                 <h3>SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation</h3>
                 <p>
@@ -288,7 +349,7 @@
               </article>
               <article>
                 <a href="https://human2sim2robot.github.io/" class="image"
-                  ><img src="images/human2sim2robot.png" alt=""
+                  ><img loading="lazy" src="images/human2sim2robot.png" alt="Human2Sim2Robot"
                 /></a>
                 <h3>Crossing the Human-Robot Embodiment Gap with Sim-to-Real RL using One Human Demonstration</h3>
                 <p>
@@ -309,7 +370,7 @@
               </article>
               <article>
                 <a href="https://sites.google.com/view/dexterous-vlm-scaffolding" class="image"
-                  ><img src="images/scaffolding_dex_vlm.png" alt=""
+                  ><img loading="lazy" src="images/scaffolding_dex_vlm.png" alt="Scaffolding dexterous manipulation with vision-language models"
                 /></a>
                 <h3>Scaffolding Dexterous Manipulation with Vision-Language Models</h3>
                 <p>
@@ -330,7 +391,7 @@
               </article>
               <article>
                 <a href="https://sites.google.com/view/dextrah-g" class="image"
-                  ><img src="images/dextrah.png" alt=""
+                  ><img loading="lazy" src="images/dextrah.png" alt="DextrAH-G"
                 /></a>
                 <h3>
                   DextrAH-G: Pixels-to-Action Dexterous Arm-Hand Grasping with
@@ -358,7 +419,7 @@
                 <a
                   href="https://sites.google.com/view/get-a-grip-dataset"
                   class="image"
-                  ><img src="images/get_a_grip.png" alt=""
+                  ><img loading="lazy" src="images/get_a_grip.png" alt="Get a Grip"
                 /></a>
                 <h3>
                   Get a Grip: Multi-Finger Grasp Evaluation at Scale Enables
@@ -385,7 +446,7 @@
                 <a
                   href="https://arxiv.org/abs/2410.23039"
                   class="image"
-                  ><img src="images/neural_attention_field.jpg" alt=""
+                  ><img loading="lazy" src="images/neural_attention_field.jpg" alt="Neural Attention Field"
                 /></a>
                 <h3>Neural Attention Field: Emerging Point Relevance in 3D Scenes for One-Shot Dexterous Grasping</h3>
                 <p>
@@ -408,7 +469,7 @@
                 <a
                   href="https://sites.google.com/view/rl-soft-robot"
                   class="image"
-                  ><img src="images/rlsoftrobot_splash_photo_notext.png" alt=""
+                  ><img loading="lazy" src="images/rlsoftrobot_splash_photo_notext.png" alt="Reinforcement learning for soft robot arms"
                 /></a>
                 <h3>
                   Reinforcement Learning Enables Real-Time Planning and Control
@@ -437,7 +498,7 @@
                   class="image"
                   ><img
                     src="images/representation_intramodel_consistency.png"
-                    alt=""
+                    alt="Pre-trained visual representations for robotic learning"
                 /></a>
                 <h3>
                   What Makes Certain Pre-Trained Visual Representations Better
@@ -467,7 +528,7 @@
                 <a
                   href="https://link.springer.com/chapter/10.1007/978-3-030-87583-1_16"
                   class="image"
-                  ><img src="images/COVID_Publication.png" alt=""
+                  ><img loading="lazy" src="images/COVID_Publication.png" alt="COVID-19 diagnosis from lung ultrasound video"
                 /></a>
                 <h3>
                   Imaging Biomarker Knowledge Transfer for Attention-Based
@@ -501,7 +562,7 @@
                 <a
                   href="https://ieeexplore.ieee.org/document/8962724"
                   class="image"
-                  ><img src="images/VRX_Publication.png" alt=""
+                  ><img loading="lazy" src="images/VRX_Publication.png" alt="Virtual RobotX maritime simulation"
                 /></a>
                 <h3>Toward Maritime Robotic Simulation in Gazebo</h3>
                 <p>
@@ -530,6 +591,40 @@
             </div>
           </section>
 
+          <!-- Talks -->
+          <a id="talks"></a>
+          <section>
+            <header class="major">
+              <h2>Talks</h2>
+            </header>
+            <div class="table-wrapper">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>Y Combinator, YC Paper Club</b>, "SimToolReal"
+                      (<a
+                        href="https://www.youtube.com/watch?v=myDCd0hNqQU&t=2077s"
+                        >video</a
+                      >)
+                    </td>
+                    <td class="talk-date">Jul 2026</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>RoboPapers, Episode 82</b>, "SimToolReal"
+                      (<a
+                        href="https://www.youtube.com/watch?v=dsXB33MK6no&t=185s"
+                        >video</a
+                      >)
+                    </td>
+                    <td class="talk-date">May 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
           <!-- Experience -->
           <a id="experience"></a>
           <section>
@@ -539,7 +634,7 @@
             <div class="posts">
               <article>
                 <a href="https://rai-inst.com/" class="image"
-                  ><img src="images/rai_logo_clear.png" alt=""
+                  ><img loading="lazy" src="images/rai_logo_clear.png" alt="Robotics and AI Institute"
                 /></a>
                 <h3>Robotics Research Intern at RAI (Jun 2025 - Feb 2026)</h3>
                 <p>
@@ -549,7 +644,7 @@
               </article>
               <article>
                 <a href="https://www.nvidia.com/en-us/" class="image"
-                  ><img src="images/NVIDIA.png" alt=""
+                  ><img loading="lazy" src="images/NVIDIA.png" alt="NVIDIA"
                 /></a>
                 <h3>Robotics R&D Intern at NVIDIA (Jun 2023 - Feb 2024)</h3>
                 <p>
@@ -564,7 +659,7 @@
               </article>
               <article>
                 <a href="https://www.nvidia.com/en-us/" class="image"
-                  ><img src="images/NVIDIA.png" alt=""
+                  ><img loading="lazy" src="images/NVIDIA.png" alt="NVIDIA"
                 /></a>
                 <h3>Robotics R&D Intern at NVIDIA (May 2022 - Aug 2022)</h3>
                 <p>
@@ -576,7 +671,7 @@
               </article>
               <article>
                 <a href="https://github.com/UBCMOCCA" class="image"
-                  ><img src="images/UBC.png" alt=""
+                  ><img loading="lazy" src="images/UBC.png" alt="University of British Columbia"
                 /></a>
                 <h3>
                   Deep Reinforcement Learning Research at UBC Motion Control and
@@ -591,7 +686,7 @@
               </article>
               <article>
                 <a href="https://www.tesla.com/" class="image"
-                  ><img src="images/Tesla.png" alt=""
+                  ><img loading="lazy" src="images/Tesla.png" alt="Tesla"
                 /></a>
                 <h3>
                   Autopilot Software Engineering Intern at Tesla (May 2021 - Aug
@@ -605,7 +700,7 @@
               </article>
               <article>
                 <a href="https://rcl.ece.ubc.ca/" class="image"
-                  ><img src="images/UBC.png" alt=""
+                  ><img loading="lazy" src="images/UBC.png" alt="University of British Columbia"
                 /></a>
                 <h3>
                   Medical AI Research at UBC Robotics and Control Lab (Sep 2020
@@ -630,7 +725,7 @@
               </article>
               <article>
                 <a href="https://www.tesla.com/" class="image"
-                  ><img src="images/Tesla.png" alt=""
+                  ><img loading="lazy" src="images/Tesla.png" alt="Tesla"
                 /></a>
                 <h3>
                   Embedded Systems Software Intern at Tesla (May 2020 - Aug
@@ -643,7 +738,7 @@
               </article>
               <article>
                 <a href="https://kardium.com/" class="image"
-                  ><img src="images/Kardium.jpg" alt=""
+                  ><img loading="lazy" src="images/Kardium.jpg" alt="Kardium"
                 /></a>
                 <h3>
                   Software Engineer in Robotics at Kardium (Sep 2019 - Dec 2019)
@@ -655,7 +750,7 @@
               </article>
               <article>
                 <a href="https://www.openrobotics.org/" class="image"
-                  ><img src="images/OSRF+GSOC.png" alt=""
+                  ><img loading="lazy" src="images/OSRF+GSOC.png" alt="Open Robotics and Google Summer of Code"
                 /></a>
                 <h3>
                   Robotics Software Developer at Open Robotics and Google Summer
@@ -672,7 +767,7 @@
               </article>
               <article>
                 <a href="https://www.aandkrobotics.com/" class="image"
-                  ><img src="images/A&K.jpg" alt=""
+                  ><img loading="lazy" src="images/A&K.jpg" alt="A&K Robotics"
                 /></a>
                 <h3>
                   Robot Localization and Navigation Developer at A&K Robotics
@@ -697,7 +792,7 @@
                 <a
                   href="https://github.com/tylerlum/ufc_automated_scoring_system"
                   class="image"
-                  ><img src="images/UFC.jpeg" alt=""
+                  ><img loading="lazy" src="images/UFC.jpeg" alt="Automated scoring for mixed martial arts"
                 /></a>
                 <h3>Data-driven Mixed Martial Arts (MMA) Automated Scoring</h3>
                 <p>
@@ -722,7 +817,7 @@
                 <a
                   href="https://gist.github.com/tylerlum/51c6c246419a1ecc107e0b7a28514b9f"
                   class="image"
-                  ><img src="images/VRX.png" alt=""
+                  ><img loading="lazy" src="images/VRX.png" alt="Virtual RobotX simulator"
                 /></a>
                 <h3>
                   Virtual RobotX (VRX): Simulator for Autonomous Surface Vessels
@@ -749,7 +844,7 @@
                 <a
                   href="https://github.com/UBCSailbot/local-pathfinding"
                   class="image"
-                  ><img src="images/Sailbot.jpg" alt=""
+                  ><img loading="lazy" src="images/Sailbot.jpg" alt="UBC Sailbot autonomous sailboat Raye"
                 /></a>
                 <h3>UBC Sailbot: Fully Autonomous Sailboat</h3>
                 <p>
@@ -773,7 +868,7 @@
                 <a
                   href="https://github.com/tylerlum/vim_configuration"
                   class="image"
-                  ><img src="images/Vim.png" alt=""
+                  ><img loading="lazy" src="images/Vim.png" alt="Vim"
                 /></a>
                 <h3>Vim Configuration for Fast Text Editing</h3>
                 <p>
@@ -796,7 +891,7 @@
                 <a
                   href="https://www.youtube.com/watch?v=qKnw_AMKno4&ab_channel=BenHolmes"
                   class="image"
-                  ><img src="images/Kinect.png" alt=""
+                  ><img loading="lazy" src="images/Kinect.png" alt="Contactless vitals monitoring system"
                 /></a>
                 <h3>Contactless Vitals Monitoring System</h3>
                 <p>
@@ -820,7 +915,7 @@
               </article>
               <article>
                 <a href="https://order66bot.github.io/" class="image"
-                  ><img src="images/Order66.jpg" alt=""
+                  ><img loading="lazy" src="images/Order66.jpg" alt="Autonomous multi-robot system"
                 /></a>
                 <h3>Fully Autonomous, Multi-Robot System</h3>
                 <p>
@@ -839,7 +934,7 @@
               </article>
               <article>
                 <a href="https://voltaflex.io/" class="image"
-                  ><img src="images/Volta.jpg" alt=""
+                  ><img loading="lazy" src="images/Volta.jpg" alt="Volta Flex EMG garment"
                 /></a>
                 <h3>
                   Volta Flex: Electromyography (EMG) Garment for Injury Recovery
@@ -860,7 +955,7 @@
                 <a
                   href="https://www.hatchinghealth.ca/2018-impact"
                   class="image"
-                  ><img src="images/Lumina.png" alt=""
+                  ><img loading="lazy" src="images/Lumina.png" alt="Lumina central venous access toolkit"
                 /></a>
                 <h3>Lumina: An Improved Toolkit for Central Venous Access</h3>
                 <p>
@@ -884,7 +979,7 @@
               </article>
               <!--
 							<article>
-								<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+								<a href="#" class="image"><img loading="lazy" src="images/pic06.jpg" alt="" /></a>
 								<h3>Autonomous Electric Car Charger</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -892,7 +987,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+								<a href="#" class="image"><img loading="lazy" src="images/pic06.jpg" alt="" /></a>
 								<h3>Gym Gazebo</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -900,7 +995,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+								<a href="#" class="image"><img loading="lazy" src="images/pic05.jpg" alt="" /></a>
 								<h3>PDE Solvers: FDM, FEM, BEM, FFT</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -920,7 +1015,7 @@
 						</header>
 						<div class="posts">
 							<article>
-								<a href="" class="image"><img src="TODO.png" alt="" /></a>
+								<a href="" class="image"><img loading="lazy" src="TODO.png" alt="" /></a>
 								<h3>Muay Thai Kickboxing</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -928,7 +1023,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="" class="image"><img src="TODO.png" alt="" /></a>
+								<a href="" class="image"><img loading="lazy" src="TODO.png" alt="" /></a>
 								<h3>Volleyball</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -936,7 +1031,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="" class="image"><img src="TODO.png" alt="" /></a>
+								<a href="" class="image"><img loading="lazy" src="TODO.png" alt="" /></a>
 								<h3>Golf</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -944,7 +1039,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="" class="image"><img src="TODO.png" alt="" /></a>
+								<a href="" class="image"><img loading="lazy" src="TODO.png" alt="" /></a>
 								<h3>Skiing</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -952,7 +1047,7 @@
 								</ul>
 							</article>
 							<article>
-								<a href="" class="image"><img src="TODO.png" alt="" /></a>
+								<a href="" class="image"><img loading="lazy" src="TODO.png" alt="" /></a>
 								<h3>Hiking</h3>
 								<p>TODO</p>
 								<ul class="actions">
@@ -977,6 +1072,7 @@
               <li><a href="#introduction">Introduction</a></li>
               <li><a href="#research-interests">Research Interests</a></li>
               <li><a href="#publications">Publications</a></li>
+              <li><a href="#talks">Talks</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
               <!-- <li><a href="#hobbies-and-interests">Hobbies and Interests</a></li> -->
