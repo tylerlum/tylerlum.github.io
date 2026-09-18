@@ -34,9 +34,52 @@
     <link rel="stylesheet" href="assets/css/academicons.min.css" />
 
     <style>
-      .talk-date {
-        text-align: right;
+      /* Talks list: thumbnail, venue and title, date. The whole row links out,
+         so the theme's dotted-underline anchor styling is overridden here. */
+      a.talk {
+        display: flex;
+        align-items: center;
+        gap: 1.25em;
+        padding: 0.85em 0;
+        border-top: solid 1px rgba(210, 215, 217, 0.75);
+        border-bottom: 0;
+        color: inherit;
+      }
+      a.talk:last-child {
+        border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+      }
+      a.talk:hover {
+        color: inherit !important;
+      }
+      a.talk:hover .talk-venue {
+        color: #f56a6a;
+      }
+      a.talk img {
+        width: 140px;
+        flex: none;
+        display: block;
+        border-radius: 3px;
+      }
+      .talk-body {
+        flex: 1;
+        line-height: 1.5;
+      }
+      .talk-venue {
+        font-weight: 600;
+      }
+      .talk-when {
+        flex: none;
+        font-style: italic;
+        color: #7f888f;
         white-space: nowrap;
+      }
+      @media screen and (max-width: 736px) {
+        a.talk {
+          gap: 0.9em;
+        }
+        a.talk img {
+          width: 104px;
+        }
       }
     </style>
 
@@ -594,31 +637,29 @@
             <header class="major">
               <h2>Talks</h2>
             </header>
-            <div class="table-wrapper">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <b>Y Combinator, YC Paper Club</b>, "SimToolReal"
-                      (<a
-                        href="https://www.youtube.com/watch?v=myDCd0hNqQU&t=2077s"
-                        >video</a
-                      >)
-                    </td>
-                    <td class="talk-date">Jul 2026</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <b>RoboPapers, Episode 82</b>, "SimToolReal"
-                      (<a
-                        href="https://www.youtube.com/watch?v=dsXB33MK6no&t=185s"
-                        >video</a
-                      >)
-                    </td>
-                    <td class="talk-date">May 2026</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="talks">
+              <a class="talk" href="https://www.youtube.com/watch?v=myDCd0hNqQU&amp;t=2077s">
+                <img
+                  src="images/talk_myDCd0hNqQU.jpg"
+                  alt="Y Combinator Paper Club discussion of SimToolReal"
+                  loading="lazy"
+                />
+                <span class="talk-body">
+                  <span class="talk-venue">Y Combinator, YC Paper Club</span>, "SimToolReal"
+                </span>
+                <span class="talk-when">Jul 2026</span>
+              </a>
+              <a class="talk" href="https://www.youtube.com/watch?v=dsXB33MK6no&amp;t=185s">
+                <img
+                  src="images/talk_dsXB33MK6no.jpg"
+                  alt="RoboPapers episode 82 on SimToolReal"
+                  loading="lazy"
+                />
+                <span class="talk-body">
+                  <span class="talk-venue">RoboPapers, Episode 82</span>, "SimToolReal"
+                </span>
+                <span class="talk-when">May 2026</span>
+              </a>
             </div>
           </section>
 
